@@ -1,0 +1,18 @@
+{
+  "name": "e2e_test",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "puppeteer": "^13.5.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-puppeteer": "^6.1.0"
+  }
+}

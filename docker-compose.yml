@@ -1,0 +1,10 @@
+version: '3'
+services:
+  headless:
+    build: .
+    container_name: headless
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
