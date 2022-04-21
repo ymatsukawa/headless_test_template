@@ -11,11 +11,13 @@
 
 ```
 $ docker-compose build
+$ docker-compose -f docker-compose.example_app.yml
 ```
 
 ### Run test
 
 ```
+$ docker-compose -f docker-compose.example_app.yml up
 $ docker-compose run headless yarn run test
 ```
 
@@ -41,11 +43,3 @@ $ docker-compose run headless yarn run test
  * [Getting started - Jest](https://jestjs.io/docs/getting-started)
  * [Using with puppeteer - Jest puppeteer](https://jestjs.io/docs/puppeteer)
  * [github/smooth-code/jest-puppeteer](https://github.com/smooth-code/jest-puppeteer)
-
-## When you check behavior by example app
-
-### Installation
-
-```
-$ docker-compose -f docker-compose.yml -f docker-compose.example_app.yml build
-```
