@@ -1,0 +1,13 @@
+version: '3'
+services:
+  example_app:
+    build:
+      context: ./example_app
+      dockerfile: Dockerfile
+    container_name: example_app
+    volumes:
+      - ./example_app:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - '3000:3000'
+    command: 'npm start'
