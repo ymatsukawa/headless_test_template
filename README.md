@@ -18,6 +18,8 @@ $ docker-compose -f docker-compose.example_app.yml
 
 ```
 $ docker-compose -f docker-compose.example_app.yml up
+
+# in other terminal
 $ docker-compose run headless yarn run test
 ```
 
